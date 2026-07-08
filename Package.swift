@@ -32,6 +32,11 @@ let package = Package(
         .package(
             url: "https://github.com/smartadserver/swift-package-manager-display-sdk.git",
             exact: "7.24.2"
+        ),
+        
+        .package(
+            url: "https://github.com/appnexus/mobile-sdk-ios-spm.git",
+            exact: Version(stringLiteral: sdkVersion)
         )
     ],
 
@@ -48,6 +53,11 @@ let package = Package(
                 .product(
                     name: "SASDisplayKit",
                     package: "swift-package-manager-display-sdk"
+                ),
+                
+                .product(
+                    name: "AppNexusSDK",
+                    package: "mobile-sdk-ios-spm"
                 )
             ]
         )
