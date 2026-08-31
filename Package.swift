@@ -2,11 +2,11 @@
 
 import PackageDescription
 
-let sdkVersion = "9.12.1"
+let sdkVersion = "9.14.0"
 let baseUrl = "https://adsdk.bing.net/mobile/ios/releases"
 
 let smartAdapterChecksum = """
-9de8a0bac5d31311c279bbd562bba19e4810cf77d22acc9606a9e59b66698929
+9ecb202a8f3cd60561ff0fe405d82b3ef79bd77f93f6ab4030f19e056825b992
 """
 
 let package = Package(
@@ -15,7 +15,7 @@ let package = Package(
     defaultLocalization: "en",
 
     platforms: [
-        .iOS(.v12)
+        .iOS(.v15)
     ],
 
     products: [
@@ -36,7 +36,7 @@ let package = Package(
         
         .package(
             url: "https://github.com/appnexus/mobile-sdk-ios-spm.git",
-            exact: "9.12.0" //Version(stringLiteral: sdkVersion)
+            exact: "9.14.0" //Version(stringLiteral: sdkVersion)
         )
     ],
 
